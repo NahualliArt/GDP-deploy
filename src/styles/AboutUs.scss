@@ -45,13 +45,14 @@ a:hover{
 
 }
 
-    .miguelAbout{
-        grid-row: 3/4;
+.miguelAbout{
+        grid-row: 2/4;
         grid-column:2/9;
         display: flex;
         align-items: center;
         justify-content: center;
         color: App.$white;
+        
     
         img{ 
             width: 30vw;
@@ -83,10 +84,10 @@ a:hover{
             text-align: center;
             font-size: 25px;
         }
-    }  
+ }  
     
-    .instructorsAbout{
-        grid-row: 3/4;
+.instructorsAbout{
+        grid-row: 2/4;
         grid-column: 10/15;
         background-color: App.$white;
         text-align: center;
@@ -120,7 +121,7 @@ a:hover{
             text-align: center;
             font-size: 25px;
         }
-    }
+}
 
     @media only screen and (max-width: 768px) {
         .containerAbout{
