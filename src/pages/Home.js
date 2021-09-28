@@ -15,7 +15,6 @@ function Home() {
                 <div className="imageHome">
                     <img src={imgHome} className="desktopImg" alt="for decoration"/>
                     <img src={logoImg} className="responsiveImg" alt="Guba Doce Pares Mexico Logo" />
-
                 </div>
                 <div className="textHome">
                     <h1>{t("home.titlePage")}</h1>

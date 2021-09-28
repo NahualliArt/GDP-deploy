@@ -54,7 +54,6 @@ function Contact() {
                     <h3>AGUASCALIENTES</h3>
                     <div className="socialsClass">
                         <a href="https://www.facebook.com/xvalhallagym"><FaIcons.FaFacebookSquare className="iconWrite"/></a>
-                        {/*<a href="http://"><RiIcon.RiInstagramFill className="iconWrite"/></a>*/}
                     </div>
                 </div>
                 <div className="gdlGps">

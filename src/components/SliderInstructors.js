@@ -1,5 +1,3 @@
-/*import React, {useState} from 'react';
-*/
 import React, {useRef} from 'react';
 import { useTranslation} from 'react-i18next';
 import '../styles/SliderInstructors.scss';
@@ -17,29 +15,22 @@ const  SliderInstructors = () => {
     const slideshow = useRef(null);
 
     const siguiente = () => {
-        //Comprobamos que el slidershow tenga elementos
+        
         if(slideshow.current.children.length > 0){
-            //Obtenemos el primer elemento
             const primerElemento = slideshow.current.children[0];
-            //Creamos una trancision
             slideshow.current.style.transition = `500ms ease-out all`;
-            //Le decimos cuanto debe moverse
             const sizeSlide = slideshow.current.children[0].offsetWidth;
-            //Movemos el slideshow
             slideshow.current.style.transform = `translateX(-${sizeSlide}px)`;
-            //creamos una constante que ponga el slide que desaparece al final de la fila, así se seguiran moviendo todos
+            
             const transicion = () => {
-                //Reiniciamos la posicion del Slideshow
                 slideshow.current.style.transition = 'none';
                 slideshow.current.style.transform = `translate(0)`;
-
-                //Tomamos el primero elemento y lo mandamos al final
                 slideshow.current.appendChild(primerElemento);
 
                 slideshow.current.removeEventListener('transitionend', transicion);
                 
              };
-             //Añadimos un eventListener para decirle a la máquina cuando mover el slider
+             
              slideshow.current.addEventListener('transitionend', transicion);
         }
         
@@ -93,18 +84,12 @@ const  SliderInstructors = () => {
                         <img src={imgYasmin} alt="Yasmin Rangel"/>
                         <h3>Yasmin Rangel</h3>
                         <p>{t('about.yasminText')}</p>
-                        {/*<div className="socialsInstructors">
-                            <FaIcons.FaWhatsappSquare/>
-                        </div>*/}
                     </div>
 
                     <div className="slider" id="slider3">
                         <img src={imgCarlos} alt="Juan Carlos Reyes"/>
                         <h3>J. Carlos Reyes</h3>
                         <p>{t('about.carlosText')}</p>
-                        {/*<div className="socialsInstructors">
-                            <FaIcons.FaWhatsappSquare/>
-                        </div>*/}
                     </div>
                 </div>
 
