@@ -1,0 +1,44 @@
+{
+    "menu" :  {
+      "1": "Inicio",
+      "2": "NOSOTROS",
+      "3": "CLASES",
+      "4": "ENCÚENTRANOS",
+      "5": "CONTACTO"
+    },
+    "home" : {
+      "titlePage" : "GUBA DOCE PARES MÉXICO",
+      "titleName" : "Un clan de auténticos practicantes de filipino Eskrima-Kali-Arnis, con linaje directo de los maestros originales y sus antiguas enseñanzas",
+      "aboutUs" : "Nosotros",
+      "classes" : "Clases",
+      "findUs" : "Encuéntranos"
+    },
+    "footer" : "GUBA DOCE PARES MÉXICO | GUADALAJARA, AGUASCALIENTES, SALTILLO",
+    "about" :{
+      "titlePage" : "Nosotros",
+      "introPage" : "Somos un equipo con presencia en México desde hace más de 6 años, tenemos diferentes puntos de entrenamiento, cada uno líderado por un miembro destacado de nuestro equipo, conócelos.",
+      "miguelTitle" : "Presidente",
+      "migelText1" : "Especializado en Defensa personal y Acondicionamiento Físico. Actualmente se encuentra en Austin TX.",
+      "migelText2" : "Lídera a nuestra escuela en México, USA, Ecuador y Colombia.",
+      "instructor" : "Instructores",
+      "abigailText" : "La instrutura, Abigail, entrena en Guadalajara Jal.",
+      "yasminText" : "La instructora, Yasmin, entrena en Aguascalientes Ags.",
+      "carlosText" : "El instructor, Carlos, entrena en Aguascalientes Ags."
+    },
+    "classes" :{
+      "titlePage" : "Clases",
+      "introPage" : "Aprende de los mejores, entrenamos en diferentes horarios y lugares. Ofrecemos así mismo, seminarios y capacitaciones, desde público en general, hasta personal de seguridad.",
+      "info": "DAMOS CLASES EN",
+      "info1" : "ÚNETE A NUESTRO EQUIPO",
+      "joinTitle" : "¿TE GUSTARÍA SER INSTRUCTOR?",
+      "joinText" : "Si te gustaría poder dar clases, organizar tus propios eventos, seminarios y/o capacitaciones, con certificación y aval oficial de la asosiación Guba Doce Pares International. Completa nuestro curso especial y certificate como instructor oficial.",
+      "contact" : "CONTÁCTANOS"
+    },
+    "contact" : {
+      "title" : "CONTÁCTANOS",
+      "writeUs" : "Escríbenos",
+      "Email" : "Envíanos un Email",
+      "Whats" : "Mandanos un WhatsApp",
+      "Mess" : "Escríbenos por Messenger"
+    }
+  }

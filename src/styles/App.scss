@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,300&family=Krona+One&display=swap');
+
+/** COLORS **/
+$black: #0B0B0B;
+$shadow: #AFAFAF;
+$hoverWhite: #E1E1E1;
+$red: #C24643;
+$white: #F0EFEF;
+$transparent: transparent;
+
+/** FONTS **/
+$basicFont: 'Exo', sans-serif, 22px;
+$smallFont: 'Exo', sans-serif, 15px;
+
+/** IMGAGES **/
+$back-image: url('../assets/img/background.jpg') cover, 100vh, 100vw;
+
+
+$titleFont: 'Krona One', sans-serif;
+$titleFont-h2: 'Krona One', sans-serif, 55px;
+$titleFont-h3: 'Krona One', sans-serif, 45px;
+$titleFont-h4: 'Krona One', sans-serif, 35px;
+
+
+*{
+  box-sizing: border-box;
+  margin:0; padding: 0;
+  pointer-events: all !important;
+}
+
+
+.selected{
+  color: $red;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.navigationBar{
+  display: none !important;
+}
+
+.navigationTopBar{
+  display: none !important;
+}
+
+.navbar{
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigationBar{
+      display: flex !important;
+  }
+
+  .navigationTopBar{
+    display: flex !important;
+  }
+
+  .navbar{
+    display: block !important;
+  }
+
+
+}
+

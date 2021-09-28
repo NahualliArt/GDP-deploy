@@ -1,0 +1,45 @@
+{
+    "menu" :  {
+      "1": "Home",
+      "2": "ABOUT US",
+      "3": "CLASSES",
+      "4": "FIND US",
+      "5" : "CONTACT"
+    },
+    "home" : {
+      "titlePage" : "GUBA DOCE PARES MEXICO",
+      "titleName" : "A clan of authentic Filipino Eskrima-Kali-Arnis with direct lineage to the original Masters and their old teachings.",
+      "aboutUs" : "About Us",
+      "classes" : "Classes",
+      "findUs" : "Find Us"
+    },
+    "footer" : "GUBA DOCE PARES MEXICO | GUADALAJARA, AGUASCALIENTES, SALTILLO",
+    "about" :{
+      "titlePage" : "About Us",
+      "introPage" : "We are a team with presence in Mexico for more than 6 years, we have different training points, each one led by an outstanding member of our team, get to know them.",
+      "miguelTitle" : "President",
+      "migelText1" : "Specializing in Self Defense and Fitness. He is currently located in Austin TX.",
+      "migelText2" : "He leads our school in Mexico, also leads the training teams in USA, Ecuador and Colombia.",
+      "instructor" : "Instructors",
+      "abigailText" : "The instructor, Abigail, trains in Guadalajara Jal.",
+      "yasminText" : "The instructor, Yasmin, trains in Aguascalientes Ags.",
+      "carlosText" : "The instructor, Carlos, trains in Aguascalientes Ags."
+    },
+    "classes" :{
+      "titlePage" : "Classes",
+      "introPage" : "Learn from the best, we train at different times and places. We also provide seminars and training, from the general public to security personnel.",
+      "info": "WE GIVE CLASSES AT",
+      "info1" : "JOIN OUR TEAM",
+      "joinTitle" : "WOULD YOU LIKE TO BECOME AN INSTRUCTOR?",
+      "joinText" : "If you would like to be able to give classes, organize your own events, seminars and/or trainings, with certification and official endorsement of the Guba Doce Pares International association. Complete our special course and get certified as an official instructor.",
+      "contact" : "CONTAC US"
+    },
+    "contact" : {
+      "title" : "CONTACT US",
+      "writeUs" : "Write us!",
+      "Email" : "Send us an Email",
+      "Whats" : "Send us a WhatsApp message",
+      "Mess" : "Talk to us by Messenger"
+    }
+    
+  }

@@ -1,0 +1,174 @@
+@use "./App.scss";
+
+.containerContact{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    top: 5vh; left: 0;
+    /** GRID CONTAINER **/
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 2;
+
+    overflow: hidden;
+    background-image: url('../assets/img/background.jpg');
+    
+
+    .titleContact{
+        grid-column-start: 1;
+        grid-column-end: -1;   
+        padding: 5%;
+        text-align: center;
+        color: App.$white;
+
+        h1{
+            font-family: 'Krona One', sans-serif;
+            font-size: 60px;
+        }
+
+
+    }
+
+    .writeUs{
+        grid-column: span 5;
+        margin: auto;
+
+        h3{
+            font-family: 'Krona One', sans-serif;
+            font-size: 30px;
+            color: App.$white;
+        }
+
+        .iconWrite{
+            margin-right: 12px;
+            color: App.$white;
+        }
+
+        ul{
+            list-style-type: none;
+            margin:4% 0; padding: 0;
+            overflow: hidden;
+            
+            li{
+                padding: .4rem;
+
+                a{
+                    color: App.$white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .mapsClasses{
+        grid-column: span 10;
+        display: flex;
+
+        div{
+            padding: 2%;
+            text-align: center;
+
+            h3{
+                font-family: 'Krona One', sans-serif;
+                font-size: 20px;
+                margin-top: 15px;
+                color: App.$white;
+            }
+
+            .socialsClass{
+                
+                a{
+                    padding: 5px;
+                    font-size: 18px;
+                    color: App.$white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .containerContact{
+        position: absolute;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: 5;
+        top:0; left: 0;
+        padding: 0 12% 25% 12%;
+        justify-content: center;
+        height: auto;
+
+        .titleContact{
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            justify-self: center;
+            padding: 14% 4% 2% 4%;
+
+            h1{
+                font-size: 5vh; 
+                overflow: hidden;
+            }
+
+            h1:after{
+                content: "";
+                display: inline-block;
+                height: 1px;
+                vertical-align: bottom;
+                width: 70vw;
+                border-top: 1px solid App.$white;
+                margin-top: -12%;
+            }
+        }
+
+        .writeUs{
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+            justify-self: center;
+            margin-bottom: 22px;
+
+            a{
+                font-size: 22px;
+            }
+        }
+
+        .writeUs:before{
+            content: "";
+                display: inline-block;
+                height: 1px;
+                vertical-align: top;
+                width: 90vw;
+                border-top: 1px solid App.$white;
+                margin-bottom: -12%;
+        }
+
+        .mapsClasses{
+            grid-column: 1 / -1;
+            grid-row: 2 / 4;
+            justify-self: center;
+            display: flex;
+            flex-flow: column wrap;
+            
+            iframe{
+                width: 300px;
+                height: 300px;
+                align-self: center;
+
+            }
+
+            div{
+                padding: 2%;
+                    
+                    a{
+                        padding: 5px;
+                        font-size: 22px;
+                        color: App.$white;
+                        text-decoration: none;
+                    }
+                
+            }
+        }
+
+    }
+}

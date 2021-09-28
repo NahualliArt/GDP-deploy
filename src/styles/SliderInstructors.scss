@@ -1,0 +1,66 @@
+@use "./App.scss";
+
+
+
+.contenedorPrincipal{    
+    pointer-events: all !important;
+    overflow: hidden;
+    
+}
+
+.contenedorSlideshow {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .slider{
+        min-width: 100%;
+
+        p{
+            margin-bottom: 2vh;
+        }
+
+        a{
+            color: App.$black;
+            font-size: 5vh;
+            margin: 0 .5vw 0 .5vw;
+        }
+
+        a:hover{
+            color: App.$red;
+        }
+    }
+}
+
+.controls{
+
+     img{
+         width: 15%;
+         background-color: App.$white;
+         border: solid App.$hoverWhite 2px;
+         border-radius: 5px;
+         margin: 1vh .25vw 0 .25vw;
+         padding: 2.5%;
+         pointer-events: all; 
+     }
+
+     img:hover{
+         background-color: App.$hoverWhite;
+         cursor: pointer;
+     }
+
+     img:active{
+         box-shadow: inset 2px 2px 4px App.$shadow;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+    .controls{
+
+        img{
+            width: 22%;
+            margin: 1vh 5vw 0 5vw;
+            padding: 3.5%;
+        }
+    }
+
+}

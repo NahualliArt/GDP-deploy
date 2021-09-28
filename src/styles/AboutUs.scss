@@ -1,0 +1,174 @@
+@use "./App.scss";
+
+.containerAbout{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    top: 5vh; left: 0;
+    /** GRID CONTAINER **/
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 4;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('../assets/img/background.jpg');
+    padding-bottom: 6%;
+}
+
+a{
+    color: App.$white;
+}
+
+a:hover{
+    color: App.$red;
+}
+
+.titleAbout{
+    height: 280px;
+    grid-column: 1 / -1;   
+    padding: 5%;
+    background-image: url('../assets/img/about_hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: App.$white;
+
+    h1{
+        font-family: 'Krona One', sans-serif;
+        font-size: 60px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+}
+
+    .miguelAbout{
+        grid-row: 3/4;
+        grid-column:2/9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: App.$white;
+    
+        img{ 
+            width: 30vw;
+            height: auto;
+            margin: 0 10px;
+        }
+    
+        .aboutMiguel{
+            text-align: center;
+            margin-bottom: 22px;
+        
+            h3{
+                font-size: 22px;
+                font-family: 'Krona One', sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+        
+            h2{
+                font-size: 25px;
+                font-family: 'Krona One', sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+                color: App.$red;
+            }
+        }
+        
+        .socialsMiguel{
+            text-align: center;
+            font-size: 25px;
+        }
+    }  
+    
+    .instructorsAbout{
+        grid-row: 3/4;
+        grid-column: 10/15;
+        background-color: App.$white;
+        text-align: center;
+        padding: 4% 4%;
+        margin-top: 7vh;
+    
+        h2{
+            font-size: 22px;
+            font-family: 'Krona One', sans-serif;
+            text-transform: uppercase;
+            color: App.$black;
+            padding-top: 5%;
+        }
+        
+        h3{
+            font-size: 22px;
+            font-family: 'Krona One', sans-serif;
+            text-transform: uppercase;
+            color: App.$red;
+            padding-top: 5%;
+        }
+    
+        .infoInstructors{
+            padding: 8% 20%;
+            height: auto;
+        }
+        
+        a .socialsInstructors{
+            color: App.$black;
+            margin-top: 22px;       
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .containerAbout{
+            position: absolute;
+            grid-template-columns: repeat(15, 1fr);
+            top:0; left: 0;
+            padding: 0 12% 25% 12%;
+            justify-content: center;
+    
+            .titleAbout{
+                grid-column: 1 / -1;
+                justify-self: center;
+                padding: 4% 15%;
+                background-position: center bottom;
+
+                h1{
+                   font-size: 45px; 
+                }
+                
+                h4{
+                    padding: 4% 1%;
+                }
+            }
+
+            .miguelAbout{
+                grid-column: 1 / -1;
+                grid-row: 2/3;
+                flex-flow: column wrap;
+
+                img{ 
+                    min-width: 80vw;
+                    margin-bottom: 2%;
+                }
+
+                .aboutMiguel{
+                    margin-top: 12px;
+                    padding: 0 11%;
+                }
+            
+            }
+
+            .instructorsAbout{
+                grid-column: 1 / -1;
+            }
+
+        }
+        
+    }
+    
+
+

@@ -1,0 +1,123 @@
+@use "./App.scss";
+
+.contenderMenu{
+    width: 100vw;
+    height: auto;
+    padding: 1%;
+    position: fixed;
+    /** GRID CONTAINER **/
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1;
+    z-index: 3;
+
+    background-color: App.$black;
+    color: App.$white;
+    font-family: App.$basicFont;
+
+    .language{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-column: span 3; /* Abarca (span) tantas columnas (2) */
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 2vw;
+            height: auto;
+            margin: 2px;
+        }
+
+        img:hover{
+            background-color: App.$red;
+            cursor: pointer;
+        }
+
+        img:active{
+            box-shadow: inset 2px 2px 12px black;
+        }
+    }
+
+    .menuLinks{
+
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-column: span 8;
+
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+
+
+        ul{
+            
+            list-style-type: none;
+            margin: 0; padding: 0;
+            overflow: hidden;
+
+            .linksMenu{
+                color: App.$white;
+
+                li{
+                    float: left;
+                    padding: 12px 32px; 
+                    position: relative;
+                }
+
+                li:hover{
+                    text-decoration: underline;
+                    text-underline-offset: 6px;
+                }
+
+            }
+
+            .linksMenu:hover{
+                color: App.$red;
+            }            
+        }
+    }
+
+    .iconsSocials{
+
+        grid-column-start: 12;
+        grid-column-end: 15;
+        grid-column: span 4;
+
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+
+
+        ul{
+            text-decoration: underline;
+            list-style-type: none;
+            margin: 0; padding: 0;
+            overflow: hidden;
+
+            li{
+                list-style: none;
+                float: left;
+                padding: 12px;
+            }
+
+            li:hover{
+                color: App.$red;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.contenderMenu > div{
+    padding: 0; margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenderMenu{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,38 @@
+@use "./App.scss";
+
+.navigationBar{
+    background-color: App.$black;
+
+    justify-content: space-around;
+    align-items: stretch;
+
+    min-width: 96vw;
+    height: auto;
+
+    margin: 2%;
+    padding: 5vw 2vh;
+
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px App.$black;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+
+    .option{
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+    
+        img{
+            width: 8vw;
+            height: auto;
+        }
+
+        p{
+            font-size: 2vw;
+            color: App.$red !important;
+        }
+    }
+
+}

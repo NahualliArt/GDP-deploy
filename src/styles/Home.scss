@@ -1,0 +1,92 @@
+@use "./App.scss";
+
+.responsiveImg{
+    display: none;
+}
+
+.containerHome{
+    min-width: 100%;
+    min-height: 100%;
+    padding: 2% 12%;
+    margin: auto;
+    position: relative;
+    top: 1vh; left: 0;
+    z-index: -1;
+    /** GRID CONTAINER **/
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 2;
+
+    overflow: hidden;
+    background-image: url('../assets/img/background.jpg');
+  
+    align-items: center;
+    justify-content: center;
+
+
+    .imageHome{
+        grid-column: 1/7;   
+        padding: 2%;
+        margin-top: 6%;
+
+        img{
+            width: 40vw;
+            height: auto;
+            padding-top: 5px; 
+        }
+    }
+
+    .textHome{
+        grid-column: 9/14;
+        width: 30vw;
+
+        h1{
+            font-family: 'Krona One', sans-serif;
+            font-size: 60px;
+            color: App.$red;
+        }
+
+        h3{
+            color: App.$white;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .desktopImg{
+        display: none;
+    }
+    .responsiveImg{
+        display: block;
+    }
+
+    .containerHome{
+        top:0; 
+        left: 0;
+        padding: 0 12% 45% 12%;
+
+
+        .imageHome{
+            grid-column: 1 / -1;
+            justify-self: center;
+            padding: 0;
+
+            img{
+                width: 60vw;
+                height: auto;
+            }
+        }
+    
+        .textHome{
+            grid-column: span 15;
+            width: 100vw;
+            justify-self:center;
+            padding: 0 5%;
+            
+        }
+    }
+    
+}

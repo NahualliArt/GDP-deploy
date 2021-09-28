@@ -1,0 +1,66 @@
+@use "./App.scss";
+
+.navbar{
+    background-color: App.$black;
+    color: App.$white;
+    position: fixed;
+    top: 0; right: 0;
+    z-index: 13;
+    font-size: 5vh;
+    margin: auto;
+    padding: 3%;
+    border-radius: 0 0 0 20px;
+    box-shadow: 0px 4px 4px App.$black;
+
+    .menu-bars{
+        .iconSocials{
+            color: App.$white;
+        }
+    }
+}
+
+.nav-menu{
+    background-color: App.$black;
+
+    justify-content: space-around;
+    flex-flow: column wrap;
+    align-items: stretch;
+
+    min-width: 12vw;
+    height: auto;
+
+    margin: 2vw;
+    padding: 2vw 2vh;
+
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px App.$black;
+
+    position: fixed;
+    top: 0; right: -100%;
+    transition: 85ms;
+    z-index: 13;
+
+    .option{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 5vw 0;
+    
+        img{
+            width: 8vw;
+            height: auto;
+        }
+
+        a, .iconSocials{
+            color: App.$white;
+            font-size: 5vw;
+        }
+    }
+
+}
+
+.nav-menu.active{
+    right: 0;
+    transition: 350ms;
+}
