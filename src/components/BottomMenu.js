@@ -1,11 +1,8 @@
-/*import React, {useState} from 'react';*/
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation} from 'react-i18next';
 import '../styles/App.scss';
 import '../styles/BottomMenu.scss';
-/*import { IconContext } from 'react-icons';*/
-import * as FaIcons from "react-icons/fa/index"; 
 
 import homeImg from '../assets/menuIcons/home.png';
 import usImg from '../assets/menuIcons/us.png';
@@ -13,10 +10,8 @@ import clasesImg from '../assets/menuIcons/clases.png';
 import contact from '../assets/menuIcons/contact.png';
 
 function BottomMenu() {
-    const { t, i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-      };
+    const { t } = useTranslation();
+    
 
     return (
         <>
