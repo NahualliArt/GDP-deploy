@@ -7,8 +7,8 @@
     position: fixed;
     /** GRID CONTAINER **/
     display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(17, 1fr);
     grid-template-rows: 1;
     z-index: 3;
 
@@ -19,7 +19,7 @@
     .language{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-column: span 1; /* Abarca (span) tantas columnas (2) */
+        grid-column: span 2; /* Abarca (span) tantas columnas (2) */
         display: flex;  
         align-items: center;
         justify-content: center;
@@ -42,9 +42,9 @@
 
     .menuLinks{
 
-        grid-column-start: 2;
-        grid-column-end: 8;
-        grid-column: span 7;
+        grid-column-start: 3;
+        grid-column-end: 13;
+        grid-column: span 11;
 
         display: flex;  
         align-items: center;
@@ -81,8 +81,8 @@
 
     .iconsSocials{
 
-        grid-column-start: 9;
-        grid-column-end: 12;
+        grid-column-start: 14;
+        grid-column-end: 17;
         grid-column: span 4;
 
         display: flex;  
