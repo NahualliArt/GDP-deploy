@@ -9,16 +9,16 @@
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: 2;
+    grid-template-rows: 4;
 
     overflow: hidden;
     background-image: url('../assets/img/background.jpg');
     
 
     .titleContact{
-        grid-column-start: 1;
-        grid-column-end: -1;   
-        padding: 5%;
+        height: 20vh;
+        grid-column: 1 / -1;   
+        padding: 12% 5%;
         text-align: center;
         color: App.$white;
 
@@ -33,6 +33,7 @@
     .writeUs{
         grid-column: span 5;
         margin: auto;
+        justify-content: center;
 
         h3{
             font-family: 'Krona One', sans-serif;
@@ -64,6 +65,7 @@
     .mapsClasses{
         grid-column: span 10;
         display: flex;
+        justify-content: center;
 
         div{
             padding: 2%;
