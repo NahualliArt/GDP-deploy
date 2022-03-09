@@ -1,4 +1,6 @@
 import React, { Suspense } from 'react';
+import {Helmet} from "react-helmet";
+
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import BottomMenu from './components/BottomMenu';
@@ -16,7 +18,15 @@ function Page() {
 
   return (
     <div className="App">
-
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Guba Doce Pares México</title>
+          <link rel="canonical" href="https://www.gubadocepares.mx/" />
+          <meta
+            name="description"
+            content="Conoce el estilo Guba Doce Pares, en México."
+          />
+        </Helmet>
         <Router>
           <NavBar/>
           <TopMenu/>
