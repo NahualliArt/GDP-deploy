@@ -25,7 +25,7 @@ function AboutUs() {
                             <div>
                                 <div className="aboutMiguel">   
                                     <h3>{t('about.miguelTitle')}</h3>
-                                    <h2>Miguel Arroyo - </h2>
+                                    <h2>Miguel Arroyo -  Master</h2>
                                     <p>{t('about.migelText1')}</p>
                                     <p>{t('about.migelText2')}</p>
                                 </div>
