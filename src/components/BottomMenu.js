@@ -19,7 +19,7 @@ function BottomMenu() {
                 <Link to="/" className="option" activeClassName="selected">
                     <div>   
                         <img src={homeImg} alt="prueba" />
-                        <p>GDPMX</p>
+                        <p>GDPMX - GDL</p>
                     </div>
                 </Link>
 
