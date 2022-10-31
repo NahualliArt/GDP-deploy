@@ -5,6 +5,7 @@ import '../styles/AboutUs.scss';
 import '../styles/SliderInstructors.scss';
 import imgMiguel from '../assets/img/miguelP.png';
 import * as FaIcons from "react-icons/fa/index"; 
+import * as RiIcon from "react-icons/ri"; 
 import SliderInstructors from '../components/SliderInstructors';
 
 import '../styles/SliderInstructors.scss';
@@ -47,12 +48,8 @@ function AboutUs() {
                                 <h3>Abigail Pérez</h3>
                                 <p>{t('about.abigailText')}</p>
                                 <div className="socialsInstructors">
-                                    <a href="https://www.facebook.com/gubadoceparesgdl">
-                                        <FaIcons.FaFacebookSquare/>
-                                    </a>
-                                    <a href="https://wa.link/zmgfv8">
-                                        <FaIcons.FaWhatsappSquare/>
-                                    </a>
+                                    <a href="https://t.me/gubadoceparesgdl"><RiIcon.RiTelegramFill/></a>
+                                    <a href="https://www.instagram.com/gubadoceparesgdl/"><RiIcon.RiInstagramFill/></a>
                                 </div>
                             </div>
                         </div>
