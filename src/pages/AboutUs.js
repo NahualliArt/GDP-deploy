@@ -7,6 +7,9 @@ import imgMiguel from '../assets/img/miguelP.png';
 import * as FaIcons from "react-icons/fa/index"; 
 import SliderInstructors from '../components/SliderInstructors';
 
+import '../styles/SliderInstructors.scss';
+import imgAbigail from '../assets/img/abigailP.png'; 
+
 
 
 function AboutUs() {
@@ -39,7 +42,19 @@ function AboutUs() {
                     <div className="instructorsAbout">
                         <h2>{t('about.instructor')}</h2>
                         <div className="infoInstructors">
-                                <SliderInstructors/>
+                            <div className="slider">
+                                <img src={imgAbigail} alt="Abigail Perez"/>
+                                <h3>Abigail Pérez</h3>
+                                <p>{t('about.abigailText')}</p>
+                                <div className="socialsInstructors">
+                                    <a href="https://www.facebook.com/gubadoceparesgdl">
+                                        <FaIcons.FaFacebookSquare/>
+                                    </a>
+                                    <a href="https://wa.link/zmgfv8">
+                                        <FaIcons.FaWhatsappSquare/>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                
