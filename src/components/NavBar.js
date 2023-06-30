@@ -48,7 +48,7 @@ function NavBar() {
                             <a href="https://t.me/gubadoceparesgdl"><RiIcon.RiTelegramFill/></a>
                         </li>
                         <li>
-                            <a href="https://www.tiktok.com/@nahualliart?"><SiIcon.SiTiktok/></a>
+                            <a href="https://www.tiktok.com/@gubadoceparesgdl"><SiIcon.SiTiktok/></a>
                         </li>
                     </ul>
                 </div>

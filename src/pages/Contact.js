@@ -67,7 +67,7 @@ function Contact() {
                     <h3>GAUDALAJARA</h3>
                     <div className="socialsClass">
                         <a href="https://www.instagram.com/gubadoceparesgdl/"><RiIcon.RiInstagramFill className="iconWrite"/></a>
-                        <a href="https://www.tiktok.com/@nahualliart?"><SiIcon.SiTiktok className="iconWrite"/></a>
+                        <a href="https://www.tiktok.com/@gubadoceparesgdl"><SiIcon.SiTiktok className="iconWrite"/></a>
                     </div> 
                 </div>   
             </div>     
